@@ -23,6 +23,7 @@ public class HealthApiTest {
     @Autowired
     private TestRestTemplate restTemplate;
 
+    @Test
     @Ignore
     public void healthTest() {
         ResponseEntity<String> response = this.restTemplate.getForEntity("/health", String.class);
